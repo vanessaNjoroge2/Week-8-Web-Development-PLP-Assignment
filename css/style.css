@@ -322,7 +322,6 @@ form button:hover {
   line-height: 1.6;
 }
 
-/* ========================= Gallery Section (Grid like About Section) ========================= */
 /* ========================= Gallery Grid ========================= */
 .gallery {
   max-width: var(--max);
@@ -368,7 +367,6 @@ form button:hover {
 .gallery-item:hover img {
   transform: scale(1.07);
 }
-
 
 /* ========================= FAQ Section ========================= */
 .faq {
@@ -456,20 +454,101 @@ footer a:hover {
   color: #ffd166;
 }
 
-/* ========================= Responsive Design ========================= */
-@media (max-width: 768px) {
-  .hero,
-  .about-hero {
-    flex-direction: column;
-    text-align: center;
+/* ================= Responsive Design ================= */
+
+/* Tablets and small laptops */
+@media (max-width: 992px) {
+  header nav ul {
+    gap: 1rem;
   }
 
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-content, 
   .hero-image {
-    margin-top: 2rem;
+    width: 100%;
   }
 
-  .contact-container {
+  .hero-image img {
+    max-width: 80%;
+    margin: 1rem auto;
+    display: block;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 1rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  header nav ul {
     flex-direction: column;
-    text-align: center;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr; /* stack images */
+  }
+
+  .gallery-grid img {
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: var(--radius);
+  }
+
+  .faq-question {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.85rem;
+  }
+
+  form input, 
+  form textarea, 
+  form button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+  }
+
+  header nav ul {
+    font-size: 0.85rem;
   }
 }
