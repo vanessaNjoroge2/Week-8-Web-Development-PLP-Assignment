@@ -29,7 +29,7 @@ The **BlueWave Fish Market** website showcases fresh fish supplies, fishermen, a
 ## 🚀 Deployment
 
 The website is hosted on **GitHub Pages**.
-👉 Live Demo: *\[Add your GitHub Pages URL here once deployed]*
+👉 Live Demo: https://vanessanjoroge2.github.io/Week-8-Web-Development-PLP-Assignment/
 
 ## 📂 Project Structure
 
