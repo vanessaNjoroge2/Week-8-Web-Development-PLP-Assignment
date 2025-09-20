@@ -171,6 +171,11 @@ nav a:hover {
   color: var(--muted);
 }
 
+.about-hero h3 {
+  color: #007BFF; /* Bright blue */
+  margin-top: 1.5rem; /* Optional: spacing above the heading */
+}
+
 .about-hero ul {
   margin-top: 1rem;
   padding-left: 1.2rem;
